@@ -1,4 +1,7 @@
-section#schedule.s-speaker.schedule {
+body{
+  background-color: black;
+}
+section#schedule.s-speakers.schedule {
     font: 30px " Red Hat Display", sans-serif;
     color: #8b8b8b;
     padding: 130px 0px;
@@ -21,9 +24,9 @@ section#schedule.s-speaker.schedule {
     pointer-events: none;
   }
   
-  #schedule {
+ /* #schedule {
     background-color: black;
-  }
+  }*/
   
   span {
     color: white;
@@ -37,25 +40,26 @@ section#schedule.s-speaker.schedule {
     font-family: 'Montserrat', sans-serif;
     margin: 0 30% 0 35%;
     padding: 8px 0px;
+    text-align: center;
   }
   
-  .speakers-timeline-imgleft  {
+  /*.speakers-timeline-imgleft  {
     display: block;
-  margin-left: 15%;
-  }
+    margin-left: 15%;
+  }*/
   
-  .speakers-timeline-img {
+  /*.speakers-timeline-img {
     display:block;
     margin-left: 5%;
-  }
+  }*/
   
-  .speakers-timeline-img.rx-lazy_item {
+  /*.speakers-timeline-img{
     margin: 15% 30% 60px;
     -webkit-transition: .35s ease-out;
     transition: .35s ease-out;
     z-index: 1;
     transition-timing-function: ease-out;
-  }
+  }*/
   
   div.speaker-item-info {
     color: white;
@@ -66,7 +70,7 @@ section#schedule.s-speaker.schedule {
     padding: 14px 15px 23px 20px;
   }
   
-  img.rx-lazy_item {
+  /*img.rx-lazy_item {
     width: 329px;
     height: px;
   }
@@ -83,8 +87,8 @@ section#schedule.s-speaker.schedule {
   
   img.rx-lazy:hover {
     transform: translateZ(-50%);
-    -webkit-transform: translateZ(-50%) ; transition: width 2s, height 2s, transform 2s;
-  }
+    -webkit-transform: translateZ(-50%) transition: width 2s, height 2s, transform 2s;
+  }*/
   
   .s-speakers-schedule {
     padding: 148px 0 160px
@@ -153,8 +157,14 @@ section#schedule.s-speaker.schedule {
     box-shadow: 0 0 0 6px rgba(13, 90, 165, 0.4)
   }
   
-  .speakers-timeline-img, .speakers-timeline-info {
+  /*.speakers-timeline-img, .speakers-timeline-info {
     width: calc(50% - 55px)
+  }*/
+
+  .speakers-timeline-img{
+    position: relative;
+    display: inline-block;
+
   }
   
   .speakers-timeline-info .date {
@@ -173,14 +183,14 @@ section#schedule.s-speaker.schedule {
     font-weight: 300
   }
   
-  .rx-lazy_hidden {
+  /*.rx-lazy_hidden {
     opacity: 0
   }
   
   .rx-lazy {
     -webkit-transition: .35s ease-out;
     transition: .35s ease-out
-  }
+  }*/
   
   .speakers-timeline-info .title {
     font-size: 24px;
@@ -192,10 +202,10 @@ section#schedule.s-speaker.schedule {
     margin-bottom: 4px
   }
   
-  .speakers-timeline-img, .speakers-timeline-info {
+  .speakers-timeline-info{
     width: calc(50% - 40px)
   }
-  
+
   .flip {
     position: relative;
   }
@@ -252,7 +262,7 @@ section#schedule.s-speaker.schedule {
     border-radius: 10px;
   }
   
-  .flip>.front p,
+  /*.flip>.front p,
   .flip>.back p {
     font-size: 0.7rem;
     line-height: 160%;
@@ -269,7 +279,7 @@ section#schedule.s-speaker.schedule {
     width: 50px;
     height: 25px;
     padding: 0.8px;
-  }
+  }*/
   
   .text-shadow {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
@@ -397,7 +407,7 @@ section#schedule.s-speaker.schedule {
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  /* .dropdown:hover .dropbtn {background-color: } */
+  .dropdown:hover .dropbtn {background-color: ;}
 
 
 
@@ -419,10 +429,11 @@ section#schedule.s-speaker.schedule {
   /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
+    top: 10%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    margin-bottom: 40px;;
   }
   
   /* The navigation links inside the overlay */
