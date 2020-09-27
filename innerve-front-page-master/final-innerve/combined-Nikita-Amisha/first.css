@@ -1,8 +1,32 @@
-
 body{
   margin: 0;
   background: black;
 }
+
+#myCarousel {
+  background-color: black;
+  margin-top: -1%;
+  padding: 10%;
+}
+
+.carousel .carousel-item {
+    transition-duration: 0.3s;
+}
+
+.carousel-inner img{
+  color:rgba(0,0,0,0.5);
+}
+.carousel-inner > .item > img {
+  width:640px;
+  height:500px;
+}
+
+#myCarousel div img{
+  color:rgba(0,0,0,0.5);
+  margin: auto;
+  width: 70%;
+}
+
 .grid {
   text-align: center;
   width: 100%;   /*orginal was 1349*/
@@ -89,14 +113,6 @@ body{
   text-align: center;
 }
 
-.para{
-  text-align: center;
-  margin-right: 10px;
-  font-size: 25px;
- margin-top: 30px;
-  margin-left: 10px;
-}
-
 svg {
   display: block;
   font: 10.5em 'Montserrat';
@@ -148,6 +164,11 @@ svg {
   height: 300px;
   width: 100%;
   background-color: black;
+}
 
+.innerve-intro {
+  margin: 50px;
+  text-align: left;
+  font-size: 25px;
 }
    
