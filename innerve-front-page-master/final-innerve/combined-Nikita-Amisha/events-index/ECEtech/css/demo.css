@@ -44,8 +44,10 @@
     text-align: left;
     padding: 15px;
     box-sizing: border-box;
-    background-color: grey;
-    color: white;
+    background-image: url(https://cdn.pixabay.com/photo/2020/04/20/05/34/background-bokeh-5066447_960_720.jpg);
+    color: black;
+/*    background-image: url(https://cdn.pixabay.com/photo/2014/04/04/14/55/silver-313347_960_720.jpg);*/
+    font-size: 25px;
     
     
 }
