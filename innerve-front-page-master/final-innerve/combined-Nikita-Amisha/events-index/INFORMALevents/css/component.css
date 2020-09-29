@@ -2,9 +2,10 @@
 
 body {
 
-  background-image: url(https://cdn.pixabay.com/photo/2014/06/24/17/38/smoke-376543_960_720.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/31/17/02/blue-1634110_960_720.png);
   background-size: cover;
 	font-family: 'Lato', Arial, sans-serif;
+
 	color: #fff;
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
@@ -478,7 +479,7 @@ Generate "lighting" using box shadows
 Posters and still images
 **************************************/
 
-.scene.image :nth-child(1) .movie .poster {
+.scene.image:nth-child(1) .poster {
   background-image: url(../img/poster01.jpg);
 }
 
@@ -489,19 +490,55 @@ Posters and still images
 .scene.image:nth-child(3) .poster {
   background-image: url(../img/poster03.jpg);
 }
+.scene.image:nth-child(4) .poster {
+  background-image: url(../img/poster01.jpg);
+}
+.scene.image:nth-child(5) .poster {
+  background-image: url(../img/poster02.jpg);
+}
+.scene.image:nth-child(6) .poster {
+  background-image: url(../img/poster03.jpg);
+}
+.scene.image:nth-child(7) .poster {
+  background-image: url(../img/poster01.jpg);
+}
+.scene.image:nth-child(8) .poster {
+  background-image: url(../img/poster02.jpg);
+}
 
-/* .scene.image:nth-child(1) .info header {
+
+
+ .scene.image:nth-child(1) .info header {
 	background-image: url(../img/still01.jpg);
 }
 
 .scene.image:nth-child(2) .info header {
-	background-image: url(../img/beg_borrow.jpg);
+	background-image: url(../img/still02.jpg);
 }
 
 .scene.image:nth-child(3) .info header {
 	background-image: url(../img/still03.jpg);
-} */
+} 
+.scene.image:nth-child(4) .info header {
+	background-image: url(../img/still01.jpg);
+} 
+.scene.image:nth-child(5) .info header {
+	background-image: url(../img/still02.jpg);
+} 
+.scene.image:nth-child(6) .info header {
+	background-image: url(../img/still03.jpg);
+} 
+.scene.image:nth-child(7) .info header {
+	background-image: url(../img/still01.jpg);
+} 
+.scene.image:nth-child(8) .info header {
+	background-image: url(../img/still02.jpg);
+} 
 
+
+
+
+/*
 .image:nth-child(1) .info header{
 	background-image: url(../img/mystery_rooms.jpeg);
 }
@@ -538,6 +575,7 @@ Posters and still images
 .images:nth-child(8) .info header{
 	background-image: url(../img/7_in_7.jpg);
 }
+*/
 
 /*************************************
 Fallback
@@ -556,3 +594,4 @@ Media Queries
 		margin: 30px auto 60px;
 	}
 }
+
