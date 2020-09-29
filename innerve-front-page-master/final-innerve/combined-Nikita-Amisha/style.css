@@ -167,6 +167,10 @@ header {
   align-items: center;
 }
 
+.hello {
+  z-index: 5;
+}
+
 ul {
   list-style: none;
 }
