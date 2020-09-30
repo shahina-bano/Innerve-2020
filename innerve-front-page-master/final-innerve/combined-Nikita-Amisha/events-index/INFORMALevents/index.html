@@ -15,12 +15,20 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/modalh.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+		
 </head>
 	<body>
 		<div class="container">
 			<!-- Top Navigation -->
 			<header>
-				<h1 style="font-weight: bold;font-size: 55px;font-family: cursive">Informal Events</h1>
+				<h1 style="font-weight: bold;font-size: 55px;font-family: cursive; color: white">Informal Events</h1>
 			</header>
 			<span style="text-align: center"><h2 style="font-weight: bold;font-size: 30px;font-family: cursive; color:#fff; font-family: cursive ">Major Events</h2></span>
 			<div class="wrapper majorevents">
@@ -38,7 +46,10 @@
 								</header>
 								<p>
 									We present to you fiendish games that will need all your combined skill and courage! Feel the thrill and enjoy the mystery of an escape game at the comfort of your home...<br><br>
-                                <button onclick="uijht()">ReadMore</button>
+                               
+                                    <a data-toggle="modal" href="#modal1a"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 								</p>
 							</div>
@@ -61,7 +72,9 @@
                                     You must figure out all clues to get the chance...
                                    <br><br>
 
-								<button onclick="hgsrvm()">ReadMore</button>
+								<a data-toggle="modal" href="#modal1b"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 								</p>
 							</div>
@@ -86,7 +99,9 @@ Do you dare to take up this challenge? Put on your thinking caps as you get read
                                  <br><br>
 
 
-								<button onclick="lkmbh()">ReadMore</button>
+								<a data-toggle="modal" href="#modal1c"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 								</p>
 							</div>
@@ -108,7 +123,9 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 
                                     <br><br>
 
-                                <button onclick="yrsza()">ReadMore</button>
+                                <a data-toggle="modal" href="#modal1"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 								</p>
 							</div>
@@ -121,30 +138,44 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 			</div><!-- /wrapper -->
 		</div><!-- /container -->
 
-
-<!--		MODALBOXES-->
-
-
-<div class="popup" id="popup-1">
-    <div class="overlay"></div>
-    <div class="content">
-        <div class="close-btn" onclick="uijht()">&times;</div>
-        <p><b style="font-size: 25px">MYSTERY ROOMS </b><br><br>
-        
-        Do you want all your childhood memories to come alive? Want to feel the thrill and rush? You are at the right place. Plunge yourself into a classic, be a prince, genie or a pirate.<br><br>
+<div class="modal fade" id="modal1a" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Mystry Rooms</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px">Do you want all your childhood memories to come alive? Want to feel the thrill and rush? You are at the right place. Plunge yourself into a classic, be a prince, genie or a pirate.<br><br>
 We present to you fiendish games that will need all your combined skill and courage! Feel the thrill and enjoy the mystery of an escape game at the comfort of your home.
 
-				<br><br><a href="#"><button class="btn btn-1">Register</button></a>
-        </p>
+				<br><br>
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
+       </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-<div class="popup" id="popup-2">
-    <div class="overlay"></div>
-    <div class="content">
-        <div class="close-btn" onclick="hgsrvm()">&times;</div>
-        <p><b style="font-size: 25px">TREASURE HUNT</b><br><br>  
-        Embark on an enthralling hunt which will test your wits with mind-bending clues<br><br>
+			
+	
+    <!-- Modal 1b-->
+    <div class="modal fade" id="modal1b" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Treasure Hunt</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px">Embark on an enthralling hunt which will test your wits with mind-bending clues<br><br>
         "Who seeks shall find!"<br>
         "Let not the world deceive thee with its beauty.<br>
 It is the dream of a dreamer, a mirage of the desert.<br><br>
@@ -153,18 +184,28 @@ Sail into the heart of the Caribbean in the age of piracy and unlock the locks b
 Seems thrilling? Your journey awaits.
 
         <br><br>
-       <a href="#"><button class="btn btn-1">Register</button></a>
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
        </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-<div class="popup" id="popup-3">
-    <div class="overlay"></div>
-    <div class="content">
-        <div class="close-btn" onclick="lkmbh()">&times;</div>
-        <p><b style="font-size: 25px">DARE TO UNLOCK THE LOCKED ENIGMA</b><br><br> 
-        
-    Little Nanny Etticoat,<br>
+    
+    <div class="modal fade" id="modal1c" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Dare To Unlock The Locked Enigma</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px">Little Nanny Etticoat,<br>
 In a white petticoat,<br>
 And a long red nose.<br>
 The longer she stands,<br>
@@ -174,24 +215,44 @@ Well, it’s a candle!<br><br>
 Do you dare to take up this challenge? Put on your thinking caps as you get ready to solve the greatest enigma ever seen! Run against the time as you unlock the answers to this Conundrum and find those elements in your home. Unlock this level and gear up to the next one to know whether you can pluck up the courage to make that short video clip..!! <br><br>Ready? 
 
       <br><br>
-        <a href="#"><button class="btn btn-1">Register</button></a>
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
        </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-<div class="popup" id="popup-4">
-    <div class="overlay"></div>
-    <div class="content">
-        <div class="close-btn" onclick="yrsza()">&times;</div>
-        <p ><b style="font-size: 25px">TAMBOLA</b><br><br>
-        Who doesn’t love a good-online game of Housie after a long day of work and assignments?<br><br>
+    
+    
+     <div class="modal fade" id="modal1" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Tambola</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px"> Who doesn’t love a good-online game of Housie after a long day of work and assignments?<br><br>
 Join us for an online version of one of everyone's favourite game. Bring your friends and have an exciting time with them.
 
         <br><br>
-        <a href="#"><button class="btn btn-1">Register</button></a>
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
        </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+    
+
 
 		<span style="text-align: center"><h2 style="font-weight: bold;font-size: 40px;font-family: cursive; color:#fff; font-family: cursive ">Minor Events</h2></span>
 		<div class="wrapper minorevents">
@@ -212,7 +273,9 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 
                             <br><br>
 
-															<button onclick="abc()">ReadMore</button>
+															<a data-toggle="modal" href="#modal2"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 							</p>
 						</div>
@@ -235,7 +298,9 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 								Get ready to put all your resources and contacts to a test to fetch things in an epic race. Participants will be given a list of things that they will have to fetch within a time frame. Everything is fair...
 								<br><br>
 
-							<button onclick="def()">ReadMore</button>
+							<a data-toggle="modal" href="#modal3"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 							</p>
 						</div>
@@ -280,7 +345,9 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 				             Do your friends like the memes that you share? Think you have the ability to out-meme others? If the answers of all these questions is a huge YES, then this is just the right game for you to show off your knowledge. Guess the memes...		
           					<br><br>
 
-															<button onclick="jkl()">ReadMore</button>
+															<a data-toggle="modal" href="#modal2a"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 							</p>
 						</div>
@@ -302,7 +369,9 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
                             
                             <br><br>
 
-								<button onclick="mno()">ReadMore</button>
+								<a data-toggle="modal" href="#modal2b"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 							</p>
 						</div>
@@ -326,7 +395,9 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
                                  And we are giving you a chance to re-live...
                                  <br><br>
 
-								 <button onclick="pqr()">ReadMore</button>
+								 <a data-toggle="modal" href="#modal2c"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 							</p>
 						</div>
@@ -346,7 +417,9 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 				            Do you have the nag to the wrong answers to those right questions? If yes, then it’s the right place for you to freshen your mood!! This time the slow and steady will not win the race rather the fast....
 				            <br><br>
 
-							 <button onclick="stu()">ReadMore</button>
+							 <a data-toggle="modal" href="#modal3a"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 						 </p>
 					 </div>
@@ -366,7 +439,9 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 				         Do you find yourself witty enough to think of inter-related words in a blink of an eye? Do you have the rock-solid vocabulary which can surpass a mountain? If you answered yes to any of the above questions, then...
 				         <br><br>
 
-								<button onclick="vwx()">ReadMore</button>
+								<a data-toggle="modal" href="#modal3b"  
+                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
+                                     color: white; font-size: 15px">Read More</button></a>
 
 						 </p>
 					 </div>
@@ -379,118 +454,180 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 	</div><!-- /container -->
 
 
-<!--		MODALBOXES-->
 
-<div class="popup" id="popup-5">
-	<div class="overlay"></div>
-	<div class="content">
-			<div class="close-btn" onclick="abc()">&times;</div>
-			<p><b style="font-size: 25px">QUIZ UP</b><br><br>
-			From Harry Potter to Friends, Game of Thrones to Marvel, Does your heart skip a beat every time when someone talks about your favourite fandoms?<br><br>
+ <div class="modal fade" id="modal2" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Quiz Up</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px">From Harry Potter to Friends, Game of Thrones to Marvel, Does your heart skip a beat every time when someone talks about your favourite fandoms?<br><br>
             Put yourself in place of your favourite heroes and complete the quiz to find out if you’d survive in your favourite worlds. Experience the most exhilarating quiz on your favourite fandoms and gear up to take the quiz and win many exciting prizes.
 
 			<br><br>
-			<a href="#"><button class="btn btn-1">Register</button></a>
-        </p>
-	</div>
-</div>
-
-
-<div class="popup" id="popup-6">
-	<div class="overlay"></div>
-	<div class="content">
-			<div class="close-btn" onclick="def()">&times;</div>
-			<p><b style="font-size: 25px">BEG BORROW STEAL</b><br><br>
-			Get ready to put all your resources and contacts to a test to fetch things in an epic race. <br><br>Participants will be given a list of things that they will have to fetch within a time frame. Everything is fair in this game. 'Jugaad' is the keyword here. It is time to put on your shoes, fasten your belts, spruce up your imagination and put all your resources to fetch things.
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
+       </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+			
+	
+    <!-- Modal 1b-->
+    <div class="modal fade" id="modal3" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Beg Borrow Steal</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px"> Get ready to put all your resources and contacts to a test to fetch things in an epic race. <br><br>Participants will be given a list of things that they will have to fetch within a time frame. Everything is fair in this game. 'Jugaad' is the keyword here. It is time to put on your shoes, fasten your belts, spruce up your imagination and put all your resources to fetch things.
 
 			<br><br>
-		 <a href="#"><button class="btn btn-1">Register</button></a>
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
        </p>
-	</div>
-</div>
-
-
-<div class="popup" id="popup-7">
-	<div class="overlay"></div>
-	<div class="content">
-			<div class="close-btn" onclick="ghi()">&times;</div>
-			<p><b style="font-size: 25px">REMEMBER THIS?</b><br><br> Is your memory functioning at 100% of its capacity? Give your brain it’s the daily dose of challenge. <br><br>This game will test your recall abilities and push your limit as well. The clock is ticking...you have 15 seconds to memorise everything on your screen!! Can you name them all and be the ultimate champion?<br><br>
-            Find out by competing against other brainiacs!
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal2a" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">What Do You Meme?</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px">Got a strong meme game?<br> Do your friends like the memes that you share? <br>Think you have the ability to out-meme others? <br><br>If the answers of all these questions is a huge YES, then this is just the right game for you to show off your knowledge. Guess the memes correctly and win exciting prizes.
             <br><br>
-			<a href="#"><button class="btn btn-1">Register</button></a>
-		 </p>
-	</div>
-</div>
-
-
-<div class="popup" id="popup-8">
-	<div class="overlay"></div>
-	<div class="content">
-			<div class="close-btn" onclick="jkl()">&times;</div>
-			<p ><b style="font-size: 25px">WHAT DO YOU MEME?</b><br><br> Got a strong meme game?<br> Do your friends like the memes that you share? <br>Think you have the ability to out-meme others? <br><br>If the answers of all these questions is a huge YES, then this is just the right game for you to show off your knowledge. Guess the memes correctly and win exciting prizes.
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
+       </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+     <div class="modal fade" id="modal2b" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Crossword Puzzle</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px"> Getting numbed attending boring classes and staying at home? <br>Miss those carefree days?<br> Get bored? <br><br>Here’s a chance to do something enthralling. Test your mind with really exciting brain teasers that will leave you stumped. Join with a team of 4 and solve the puzzles to complete the crossword before other teams.
             <br><br>
-			<a href="#"><button class="btn btn-1">Register</button></a>
-		 </p>
-	</div>
-</div>
-
-
-<div class="popup" id="popup-9">
-	<div class="overlay"></div>
-	<div class="content">
-			<div class="close-btn" onclick="mno()">&times;</div>
-			<p ><b style="font-size: 25px">CROSSWORD PUZZLES</b><br><br>Getting numbed attending boring classes and staying at home? <br>Miss those carefree days?<br> Get bored? <br><br>Here’s a chance to do something enthralling. Test your mind with really exciting brain teasers that will leave you stumped. Join with a team of 4 and solve the puzzles to complete the crossword before other teams.
-            <br><br>
-		 <a href="#"><button class="btn btn-1">Register</button></a>
-	    </p>
-	</div>
-</div>
-
-
-<div class="popup" id="popup-10">
-	<div class="overlay"></div>
-	<div class="content">
-			<div class="close-btn" onclick="pqr()">&times;</div>
-			<p ><b style="font-size: 25px">DUMB CHARADES</b><br><br>
-			I miss the days when I used to hang out with my friends on a hot evening, sipping that cold drink after an awful game of Jenga, and an even more awful game of spin the bottle.<br><br> Just when we're almost giving up on the fun, somebody yells DUMB CHARADES and the party is back to where it started! It never fails to make a dull party moment, entertaining. <br><br>
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
+       </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+   <div class="modal fade" id="modal2c" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Dumb Charades</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px">I miss the days when I used to hang out with my friends on a hot evening, sipping that cold drink after an awful game of Jenga, and an even more awful game of spin the bottle.<br><br> Just when we're almost giving up on the fun, somebody yells DUMB CHARADES and the party is back to where it started! It never fails to make a dull party moment, entertaining. <br><br>
             And we are giving you a chance to re-live these amazing days again with our exclusive video interaction session. Join in on the stream and let's make some amazing memories! <br><br>Don't forget to bring your favourite beverage to the video call to enjoy the evening to the fullest.
             <br><br>
-			<a href="#"><button class="btn btn-1">Register</button></a>
-         </p>
-	</div>
-</div>
-	
-	
-	<div class="popup" id="popup-11">
-		<div class="overlay"></div>
-		<div class="content">
-				<div class="close-btn" onclick="stu()">&times;</div>
-				<p ><b style="font-size: 25px">IRRELEVANT RAPID FIRE QUESTIONNAIRE</b><br><br>
-				Are you bored sitting at home? <br>Are you tired of attending online classes all day?<br> Are you now fed up working from home? <br>Are you missing hanging out with your friends? <br><br>If  Yes, then it’s the time for having some fun,  as we have with us the most enthusiastic rapid-fire questions. Do you have the nag to the wrong answers to those right questions?<br><br> If yes, then it’s the right place for you to freshen your mood!! This time the slow and steady will not win the race rather the fast and furious shall leave everyone behind. Get ready to beat the turtle behind...
-                <br><br>
-				<a href="#"><button class="btn btn-1">Register</button></a>
-            </p>
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
+       </p>
+              
+              </form>
             </div>
-		</div>
-		
-		
-		<div class="popup" id="popup-12">
-			<div class="overlay"></div>
-			<div class="content">
-					<div class="close-btn" onclick="vwx()">&times;</div>
-					<p ><b style="font-size: 25px">7 IN 7</b><br><br>
-					As Atma Nirbhar Bharat takes its pace, Be brave enough to take a stand for your own "words". <br><br>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+   
+ 
+ <div class="modal fade" id="modal3a" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">Irrelevant Rapid Fire Questionnaire</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px">Are you bored sitting at home? <br>Are you tired of attending online classes all day?<br> Are you now fed up working from home? <br>Are you missing hanging out with your friends? <br><br>If  Yes, then it’s the time for having some fun,  as we have with us the most enthusiastic rapid-fire questions. Do you have the nag to the wrong answers to those right questions?<br><br> If yes, then it’s the right place for you to freshen your mood!! This time the slow and steady will not win the race rather the fast and furious shall leave everyone behind. Get ready to beat the turtle behind...
+                <br><br>
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
+       </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="modal3b" role="dialog">
+        <div class="modal-dialog" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)">
+    
+          <!-- Modal content-->
+          <div class="modal-content" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);color: black;">
+            <div class="modal-header" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg)"><b style="font-size: 35px">7 in 7</b>
+              <button type="button" class="close" data-dismiss="modal" style="color: black;">&times;</button>
+              <h4 style="color:white;"> <span class="glyphicon glyphicon-lock" style="color: white;"></span></h4>
+            </div>
+            <div class="modal-body" style="background-image: url(https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462431_960_720.jpg);font-family: monospace">
+              <p style="font-size: 15px"> As Atma Nirbhar Bharat takes its pace, Be brave enough to take a stand for your own "words". <br><br>
                     No, Literally, we mean it. <br>
                     Do you find yourself witty enough to think of inter-related words in a blink of an eye? <br>Do you have the rock-solid vocabulary which can surpass a mountain?<br><br> If you answered yes to any of the above questions, then this is the right place for you to put your skills to test.
                     Join us in this fun event and see what it has in store for you.
 
 					<br><br>
-					<a href="#"><button class="btn btn-1">Register</button></a>
-                  </p>
-         </div>
-</div>
-
-
-
+       <a href="#"><button style="font-size: 15px; background-color: black; color: white" class="btn btn-1">Register</button></a> 
+       </p>
+              
+              </form>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
 </body>
 </html>
