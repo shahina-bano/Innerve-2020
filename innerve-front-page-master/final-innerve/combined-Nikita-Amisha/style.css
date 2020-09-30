@@ -14,8 +14,8 @@ button {
 .container-main {
   min-height: 100vh;
   width: 100%;
-  background-color: black;
-  background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
+  /*background-color: black;*/
+  /*background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);*/
   overflow-x: hidden;
   transform-style: preserve-3d;
 }
