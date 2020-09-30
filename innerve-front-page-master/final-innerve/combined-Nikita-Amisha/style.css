@@ -190,12 +190,29 @@ ul {
   animation: hide 0.5s forwards ease;
 }
 
-.links a:hover {
-  color: #fff;
-}
-
 .container-main.active .links a {
   animation: appear 0.5s forwards ease var(--i);
+}
+
+.links ul li a {
+  position: relative;
+}
+
+.links ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.links ul li a:hover:after {
+  width: 100%;
 }
 
 @keyframes appear {
