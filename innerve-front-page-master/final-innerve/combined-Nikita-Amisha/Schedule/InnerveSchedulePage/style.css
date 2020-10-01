@@ -1,5 +1,6 @@
 body{
-  background-color: black;
+  background-image: url(https://cdn.pixabay.com/photo/2013/11/03/08/05/cheers-204742_960_720.jpg);
+    background-size: cover;
 }
 section#schedule.s-speakers.schedule {
     font: 30px " Red Hat Display", sans-serif;
@@ -390,10 +391,12 @@ section#schedule.s-speakers.schedule {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color:lightgray;
+    background: linear-gradient(to top right, #ff0000 0%, #ffccff 100%);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    cursor: pointer;
+      font-weight: bold;
   }
   
   .dropdown-content a {
@@ -403,7 +406,7 @@ section#schedule.s-speakers.schedule {
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: black;}
+  .dropdown-content a:hover {background: linear-gradient(to left, #33ccff 0%, #0033cc 100%);}
   
   .dropdown:hover .dropdown-content {display: block;}
   
@@ -420,8 +423,8 @@ section#schedule.s-speakers.schedule {
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: white; /* Black fallback color */
-    background-color: rgba(7, 7, 7, 0.9); /* Black w/opacity */
+    background-color: black;
+/*    background-color: rgba(7, 7, 7, 0.9); */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
