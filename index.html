@@ -20,8 +20,7 @@
 			<div id="container"></div>
 			<div class="frame">
 				<div class="frame__demos">
-				   <a href="innerve-front-page-master/final-innerve/combined-Nikita-Amisha/first.html" class="butt">Streaming Live</a>
-				   
+                  <a href="innerve-front-page-master/final-innerve/combined-Nikita-Amisha/first.html" class="butt">Streaming Live</a>
 				  
 				</div>
 				<div class="box">
@@ -39,7 +38,7 @@
 			
 			<div class="content">
 				<div class="content__item">
-					<button class="content__button">Let's Go!</button>
+					<button id="popup" onclick="openPopup()" class="content__button">Let's Go!</button>
 				</div>
 				<div class="content__item content__item--details">
 					<h3 class="content__location">IGDTUW Presents</h3>
@@ -51,41 +50,21 @@
 				
 				<div class="content__item content__item--details content__item--columns">
 					<div class="content__inner">
+					
+					    
 						<span class="content__inner-item content__inner-item--date"></span>
-						<span class="content__inner-item">Welcome To</span>
-						<span class="content__inner-item">the Annual</span>
-						<span class="content__inner-item">Technical Festival</span>
-						<span class="content__inner-item">of</span>
-						<span class="content__inner-item">IGDTUW! <br><br></span>
-						<span class="content__inner-item">Explore the</span>
-						<span class="content__inner-item">plethora of</span>
-						<span class="content__inner-item"> competitions, gear</span>
-						<span class="content__inner-item">up your technical</span>
-						<span class="content__inner-item">skills and</span>
-<!--						<span class="content__inner-item">your wires and</span>-->
-						<span class="content__inner-item"> get ready</span>
-						<span class="content__inner-item">for an</span>
-						<span class="content__inner-item">experience</span>
-						<span class="content__inner-item">of a lifetime.</span>
-<!--						<span class="content__inner-item">Soundfreak</span>-->
-<!--                        <span class="content__inner-item">Grind</span>-->
+						<p style="font-size: 25px">Welcome to the Annual Technical Festival of IGDTUW! <br><br> Explore the plethora of competitions, gear up your technical skills snd get ready for an experience of a lifetime. </p>
+					
+					
 					</div>
 					
 					<div class="content__inner">
+						
 						<span class="content__inner-item content__inner-item--date"></span>
-						<span class="content__inner-item">Brace yourself because</span>
-						<span class="content__inner-item">Innerve'20,</span>
-						<span class="content__inner-item">First</span>
-						<span class="content__inner-item">Online Technical</span>
-						<span class="content__inner-item">Festival</span>
-						<span class="content__inner-item">of IGDTUW</span>
-						<span class="content__inner-item">is going</span>
-						<span class="content__inner-item">to blow</span>
-						<span class="content__inner-item">your mind</span>
-						<span class="content__inner-item">soon!<br><br> Bigger</span>
-						<span class="content__inner-item">and better than</span>
-						<span class="content__inner-item">ever before.</span>
+						<p style="font-size: 25px">Brace Yourself because Innerve'20, First Online Technical Festival of IGDTUW is going to blow your mind soon!<br><br> Bigger and Better than ever before.<br><br></p>
+						
 					</div>
+					
 					
 				</div>
 				
@@ -96,5 +75,27 @@
 		<script src="js/charming.min.js"></script>
 		<script src="js/demo.js"></script>
 		
+         
+<script type="text/javascript">   
+   
+         
+function openPopup(){
+  $.magnificPopup.open({
+    items: {
+      src: '#popup',
+    }, 
+    mainClass: 'mfp-newspaper'
+  });
+  $("button").prop("disabled", false);
+}
+
+$("button").on("click", function(){
+  setTimeout(openPopup, 7000);
+  $(this).prop("disabled", true);
+});         
+</script>
+
+ 
+       
 	</body>
 </html>
