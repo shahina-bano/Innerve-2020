@@ -9,11 +9,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	font-size: 14px;
 }
 .butt{
-    font-size: 25px;
-    color: black;
-    background-color: whitesmoke;
+    font-size: 15px;
+    color: firebrick;
+    background-color: #D3D3D3;
+    font-weight: bold;
     font-family: sans-serif;
-    padding: 10px;
+    padding: 5px;
+    padding-bottom: 8px;
+    float: right;
+    width: 100px;
+    height: 40px;
+    text-align: center;
     
 }
 .butt:hover{
@@ -91,14 +97,15 @@ a.pulsingButton:hover {
 }
 
 .box .inner {
-	width: 150px;
-	height: 75px;
-	line-height: 75px;
-	font-size: 2em;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
 	font-family: sans-serif;
 	font-weight: bold;
 	white-space: nowrap;
 	overflow: hidden;
+    float: left;
 }
 
 .box .inner:first-child {
