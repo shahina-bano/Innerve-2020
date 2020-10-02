@@ -42,7 +42,13 @@ h1{
 .card-image-title-description .card .card-body .card-title {
   margin-bottom: .75rem;
 }
-
+.gyij {
+    /* remember to set a width */
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    height: 100px;
+}
 .card {
   display: inline-block;
   position: relative;
@@ -100,7 +106,7 @@ h1{
 }
 
 .card:hover .card-body {
-  height: 80%;
+  height: 85%;
 }
 
 .card:hover .card-content {
