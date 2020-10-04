@@ -9,13 +9,14 @@
 }
 
 #mainNavbar .nav-link:hover {
-  color: #ea1c2c;
-  font-weight: bold;
+  /*color: #888;*/
+  color: #0784b5;
+  /*font-weight: bold;*/
   text-shadow:
-    -1px -1px 0 #2DD785,
-    1px -1px 0 #2DD785,
-    -1px 1px 0 #2DD785,
-    1px 1px 0 #2DD785;
+    -1px -1px 0,
+    1px -1px 0,
+    -1px 1px 0,
+    1px 1px 0;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -o-transition: all .5s;
@@ -35,6 +36,10 @@
 .logo img {
   margin-top: -10%;
   width: 80px;
+}
+
+.logo img:hover {
+  /*box-shadow: 3px 4px 15px azure;*/
 }
 
 .navbar-collapse {
