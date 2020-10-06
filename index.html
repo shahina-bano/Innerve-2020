@@ -11,91 +11,64 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://use.typekit.net/ldt4auk.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+        <link rel="stylesheet" type="text/css" href="css/button.css" />
 		
 	</head>
 	<body class="demo-1 loading">
 		<main>
 			<div id="container"></div>
 			<div class="frame">
-				<div class="frame__demos">
-                  <a href="innerve-front-page-master/final-innerve/combined-Nikita-Amisha/first.html" class="butt">Streaming Live</a>
-				  
-				</div>
-				<div class="box">
-                   <div class="inner">
-                       <span>Innerve 2020</span>
-                   </div>
-                <div class="inner">
-                <span>Innerve 2020</span>
-                </div>
-               </div>
-				
-				
-				
-			</div><!-- /frame -->
-			
+            </div>
+
 			<div class="content">
 				<div class="content__item">
-					<button id="popup" onclick="openPopup()" class="content__button">Let's Go!</button>
+                    <button id="popup" class="content__button" style="display: none;">Let's Go!</button>
+
 				</div>
-				<div class="content__item content__item--details">
+
+				<div class="content__item content__item--details" style="position: fixed; top: 35%; left: 7%;">
 					<h3 class="content__location">IGDTUW Presents</h3>
 					<h1 class="content__title">Innerve &nbsp; 2020</h1>
 					<p class="content__date">Nov 7th &mdash; 8th</p>
 				</div>
-				
-				
-				
+
 				<div class="content__item content__item--details content__item--columns">
 					<div class="content__inner">
-					
-					    
 						<span class="content__inner-item content__inner-item--date"></span>
-						<p style="font-size: 25px">Welcome to the Annual Technical Festival of IGDTUW! <br><br> Explore the plethora of competitions, gear up your technical skills snd get ready for an experience of a lifetime. </p>
-					
-					
+						<p style="font-size: 1.75rem; font-family: 'Piazzolla', serif;">Welcome to the Annual Technical Festival of IGDTUW! <br><br> Explore the plethora of competitions, gear up your technical skills snd get ready for an experience of a lifetime. </p>
 					</div>
-					
 					<div class="content__inner">
-						
 						<span class="content__inner-item content__inner-item--date"></span>
-						<p style="font-size: 25px">Brace Yourself because Innerve'20, First Online Technical Festival of IGDTUW is going to blow your mind soon!<br><br> Bigger and Better than ever before.<br><br></p>
-						
+						<p style="font-size: 1.75rem; font-family: 'Piazzolla', serif;">Brace Yourself because Innerve '20, First Online Technical Festival of IGDTUW is going to blow your mind soon!<br><br> Bigger and Better than ever before.<br><br></p>
 					</div>
-					
-					
 				</div>
-				
 			</div>
 		</main>
+
+        <section style="visibility: hidden;">
+            <div id="container-button">
+                <button class="learn-more">
+                    <a class="circle" aria-hidden="true" href="innerve-front-page-master/final-innerve/combined-Nikita-Amisha/first.html">
+                      <span class="icon arrow"></span>
+                    </a>
+                    <a class="button-text" href="innerve-front-page-master/final-innerve/combined-Nikita-Amisha/first.html">Learn More</a>
+                </button>
+            </div>
+        </section>
+        
 		<script src="js/ico.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/charming.min.js"></script>
-		<script src="js/demo.js"></script>
-		
-         
-<script type="text/javascript">   
-   
-         
-function openPopup(){
-  $.magnificPopup.open({
-    items: {
-      src: '#popup',
-    }, 
-    mainClass: 'mfp-newspaper'
-  });
-  $("button").prop("disabled", false);
-}
-
-$("button").on("click", function(){
-  setTimeout(openPopup, 7000);
-  $(this).prop("disabled", true);
-});         
-</script>
-
- 
-       
+		<script src="js/demo.js"></script>  
+        <script>
+            setTimeout(() => {
+                document.querySelector("section").style.visibility = "visible";
+            }, 7000);
+        </script>
 	</body>
 </html>
