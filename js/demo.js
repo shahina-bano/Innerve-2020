@@ -58,9 +58,7 @@
     }
     draw();
 
-
-    let isOpen = false;
-    enterCtrl.addEventListener('click', () => {
+    const onClick = () => {
         isOpen = true;
 
         new TimelineMax()
@@ -122,7 +120,14 @@
         .call(function() {
             frameDeco.classList.add('frame__deco--hide');
         }, null, null, 4.4);
-    });
+    }
+
+    let isOpen = false;
+//    enterCtrl.addEventListener('click', onClick);
+    setTimeout(() => {
+        onClick();
+        console.log("hello");
+    }, 2500);
     
     enterCtrl.addEventListener('mouseenter', () => {
         if ( isOpen ) return;

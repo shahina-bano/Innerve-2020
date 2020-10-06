@@ -273,7 +273,7 @@ canvas {
 }
 
 .frame {
-	padding: 3rem 5vw;
+/*	padding: 3rem 5vw;*/
 	text-align: center;
 	position: relative;
 	z-index: 1000;
@@ -359,6 +359,8 @@ canvas {
 
 .content__item--details {
 	font-family: titling-gothic-fb-wide, sans-serif;
+	font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
 }
 
 .content__location {
@@ -401,6 +403,7 @@ canvas {
 	padding: 0 4rem;
 	width: 100%;
 	font-size: 1.5rem;
+    margin-top: 5%;
 }
 
 .content__inner {
@@ -421,6 +424,8 @@ canvas {
 	display: block;
 	margin: 0 0 1.5rem;
 	font-size: 2rem;
+/*    font-family: 'Courier Prime', monospace;*/
+    font-family: 'Piazzolla', serif;
 }
 
 .content__inner-item:nth-child(3n-1) {
