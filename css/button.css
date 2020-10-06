@@ -135,5 +135,6 @@ button:hover .button-text {
         text-align: center;
         padding: 4%;
         background-color: #151616;
+        top: 0;
     }
 }
