@@ -2,8 +2,9 @@
 footer {
   margin: 0;
   padding: 0;
-  color: #d9d9d9;
+  color: #eed9b7;
   box-sizing: border-box;
+  font-weight: 300;
  /* font-family: 'Poppins', sans-serif;*/
 }
 

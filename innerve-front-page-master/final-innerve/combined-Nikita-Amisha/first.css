@@ -1,14 +1,14 @@
 body{
   margin: 0;
   /*background: black;*/
-  background-image: url('https://source.unsplash.com/oyXis2kALVg');
-  /*background-repeat: no-repeat;*/
+  /*background-image: url('https://source.unsplash.com/oyXis2kALVg');*/
+  background-color: #10060e;
   object-fit: cover;
 }
 
 #myCarousel {
   /*background-color: black;*/
-  margin-top: -1%;
+  margin-top: -10%;
   padding: 10%;
 }
 
@@ -38,7 +38,7 @@ body{
   position: relative;
   /*background-image: url(bg.jpg);*/
   background-size:contain;
-   background-color: #000;
+  /*background-color: #000;*/
 }
 
 .grid-item {
@@ -46,14 +46,17 @@ body{
   margin: 1%;
   height: 9.25vw;
   width: 9.25vw;
-  /* background-color:red; */
   opacity: 0;
   transition: opacity 1s ease 0.5s, transform 0.8s ease;
   transform: scale(1);
 }
 
+.heading {
+  background-color: transparent;
+}
+
 .grid-item:hover {
-  opacity: 1;
+  opacity: 0.65;
   transition: opacity 0.1s ease;
   transform: scale(1.04);
 }
@@ -69,14 +72,14 @@ body{
 }
 
 .head{
-  color: #000;
+  color: #353537;
   font-size: 13vw;
   font-family: 'Major Mono Display', monospace;
   font-weight: bolder;
   padding: 0;
   margin: 0;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #eed9b7;
   max-height: 200px;
 }
 
@@ -171,7 +174,7 @@ svg {
 
 .innerve-intro {
   margin: 50px;
-  text-align: left;
-  font-size: 25px;
+  text-align: center;
+  font-size: 2rem;
 }
    
