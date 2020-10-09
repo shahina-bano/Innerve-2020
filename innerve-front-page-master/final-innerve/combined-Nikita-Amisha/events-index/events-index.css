@@ -80,14 +80,12 @@ body{
   min-height: 400px;
   height: 100%;
   border: 1px solid #eed9b7;
+  /*box-shadow: 6px 12px 31px -10px #7f7b7f;*/
+  box-shadow: 5px 5px 28px -12px #ecd7b6;
+  transition: all 0.5s;
 }
 .card:hover {
-  box-shadow: 6px 12px 31px -10px #7f7b7f;
-  /*box-shadow:  -1px 1px #77aaff,
-         -2px 2px #77aaff,
-         -3px 3px #77aaff,
-         -4px 4px #77aaff,
-         -5px 5px #77aaff;*/
+  box-shadow: none;
 }
 .card-img-wrapper {
   display: flex;
@@ -161,4 +159,16 @@ body{
 
 .card:hover .card-content {
   bottom: 0;
+}
+
+@media screen and (max-width: 630px) {
+  .display-4 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .display-4 {
+    font-size: 3rem;
+  }
 }
