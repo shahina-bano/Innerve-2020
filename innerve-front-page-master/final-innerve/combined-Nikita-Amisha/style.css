@@ -313,7 +313,7 @@ ul {
   .container-main.active .main {
     animation: main-animation 0.5s ease;
     cursor: pointer;
-    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+    transform: perspective(1300px) rotateY(20deg) translateZ(160px) scale(0.5);
   }
 
   @keyframes main-animation {
@@ -322,13 +322,13 @@ ul {
     }
 
     to {
-      transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+      transform: perspective(1300px) rotateY(20deg) translateZ(160px) scale(0.5);
     }
   }
 
   .container-main.active .shadow.one {
     animation: shadow-one 0.6s ease-out;
-    transform: perspective(1300px) rotateY(20deg) translateZ(167px) scale(0.5);
+    transform: perspective(1300px) rotateY(20deg) translateZ(130px) scale(0.5);
   }
 
   @keyframes shadow-one {
@@ -337,11 +337,30 @@ ul {
     }
 
     5% {
-      transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+      transform: perspective(1300px) rotateY(20deg) translateZ(160px) scale(0.5);
     }
 
     100% {
-      transform: perspective(1300px) rotateY(20deg) translateZ(167px) scale(0.5);
+      transform: perspective(1300px) rotateY(20deg) translateZ(130px) scale(0.5);
+    }
+  }
+
+  .container-main.active .shadow.two {
+    animation: shadow-two 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateZ(100px) scale(0.5);
+  }
+
+  @keyframes shadow-two {
+    0% {
+      transform: translate(0);
+    }
+
+    20% {
+      transform: perspective(1300px) rotateY(20deg) translateZ(160px) scale(0.5);
+    }
+
+    100% {
+      transform: perspective(1300px) rotateY(20deg) translateZ(100px) scale(0.5);
     }
   }
 }
