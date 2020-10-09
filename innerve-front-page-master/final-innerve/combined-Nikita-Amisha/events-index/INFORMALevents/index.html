@@ -8,29 +8,60 @@
 		<meta name="description" content="A shading effect for 3D transformed elements" />
 		<meta name="keywords" content="css3, transforms, shadow, shading, 3d, box shadow" />
 		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/modalh.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-		
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../../nav.css" />
 </head>
 	<body>
+		<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-xl py-0 fixed-top">
+		  <a href="../../first.html" class="navbar-brand logo">
+		    <img src="../../innerve_logo.png">
+		  </a>
+		  <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navLinks">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a href="../../events-index/events-index.html" class="nav-link">EVENTS</a>
+		      </li>
+		      <li class="nav-item">
+		        <a href="#" class="nav-link">REGISTER</a>
+		      </li>
+		      <li class="nav-item">
+		        <a href="../../gallary/galindex.html" class="nav-link">GALLERY</a>
+		      </li>
+		      <li class="nav-item">
+		        <a href="../../Sponsorship/index.html" class="nav-link">SPONSORS</a>
+		      </li>
+		      <li class="nav-item">
+		        <a href="../../Schedule/InnerveSchedulePage/index.html" class="nav-link">SCHEDULE</a>
+		      </li>
+		      <li class="nav-item">
+		        <a href="../../SocialCam/index.html" class="nav-link">SOCIAL CAMPAIGN</a>
+		      </li>
+		      <li class="nav-item">
+		        <a href="#code-of-conduct" class="nav-link">CODE OF CONDUCT</a>
+		      </li>
+		      <li class="nav-item">
+		        <a href="../../MeetOurTeam/index.html" class="nav-link">MEET THE TEAM!</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
 		<div class="container">
 			<!-- Top Navigation -->
-			<header>
-				<h1 style="font-weight: bold;font-size: 55px;font-family: cursive; color: white">Informal Events</h1>
-			</header>
-			<span style="text-align: center"><h2 style="font-weight: bold;font-size: 30px;font-family: cursive; color:#fff; font-family: cursive ">Major Events</h2></span>
+			<div class="jumbotron">
+			  <h1 class="display-4">Informal Events</h1>
+			</div>
+			<!-- <span style="text-align: center"><h2 class="major-minor">Major Events</h2></span> -->
 			<div class="wrapper majorevents">
 				<ul class="stage clearfix">
 
@@ -48,8 +79,7 @@
 									We present to you fiendish games that will need all your combined skill and courage! Feel the thrill and enjoy the mystery of an escape game at the comfort of your home...<br><br>
                                
                                     <a data-toggle="modal" href="#modal1a"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 								</p>
 							</div>
@@ -73,8 +103,7 @@
                                    <br><br>
 
 								<a data-toggle="modal" href="#modal1b"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 								</p>
 							</div>
@@ -100,8 +129,7 @@ Do you dare to take up this challenge? Put on your thinking caps as you get read
 
 
 								<a data-toggle="modal" href="#modal1c"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 								</p>
 							</div>
@@ -124,8 +152,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
                                     <br><br>
 
                                 <a data-toggle="modal" href="#modal1"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 								</p>
 							</div>
@@ -254,7 +281,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
     
 
 
-		<span style="text-align: center"><h2 style="font-weight: bold;font-size: 40px;font-family: cursive; color:#fff; font-family: cursive ">Minor Events</h2></span>
+		<!-- <span style="text-align: center"><h2 class="major-minor">Minor Events</h2></span> -->
 		<div class="wrapper minorevents">
 			<ul class="stage clearfix">
 
@@ -274,8 +301,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
                             <br><br>
 
 															<a data-toggle="modal" href="#modal2"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 							</p>
 						</div>
@@ -299,8 +325,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 								<br><br>
 
 							<a data-toggle="modal" href="#modal3"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 							</p>
 						</div>
@@ -346,8 +371,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
           					<br><br>
 
 															<a data-toggle="modal" href="#modal2a"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 							</p>
 						</div>
@@ -370,8 +394,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
                             <br><br>
 
 								<a data-toggle="modal" href="#modal2b"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 							</p>
 						</div>
@@ -396,8 +419,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
                                  <br><br>
 
 								 <a data-toggle="modal" href="#modal2c"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 							</p>
 						</div>
@@ -418,8 +440,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 				            <br><br>
 
 							 <a data-toggle="modal" href="#modal3a"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 						 </p>
 					 </div>
@@ -440,8 +461,7 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
 				         <br><br>
 
 								<a data-toggle="modal" href="#modal3b"  
-                                       style="color:white;font-size: larger;"><button style="padding: 10px; background-color: black;
-                                     color: white; font-size: 15px">Read More</button></a>
+                                       style="color:white;font-size: larger;"><button>Read More</button></a>
 
 						 </p>
 					 </div>
@@ -629,5 +649,11 @@ Join us for an online version of one of everyone's favourite game. Bring your fr
       </div>
     </div>
     
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ 	<script type="text/javascript" src="../../nav.js"></script>
+
 </body>
 </html>
