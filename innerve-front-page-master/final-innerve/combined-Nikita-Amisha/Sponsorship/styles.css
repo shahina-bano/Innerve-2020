@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
@@ -25,7 +25,6 @@ background: linear-gradient(90deg, rgba(192,244,255,1) 0%, rgba(255,255,255,1) 5
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-/*width: 110%;*/
 }
 
 .text-box{
@@ -66,7 +65,7 @@ background-size: cover;
 .sponsorss-heading{
   font-weight: 400;
     font-size: 3.75rem;
-    letter-spacing: 1rem;
+    letter-spacing: 2.1875rem;
     color: #fff;
     animation: Jump 1.5s linear 0.25s;
 }
@@ -114,7 +113,11 @@ background-size: cover;
 .other-sponsors{
   padding: 20px;
   display: block;
-  margin:auto;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 220px;
+  height: 35vh;
   max-width: 100%;
   max-height: 100%;
   padding: 2%;
@@ -173,12 +176,17 @@ margin-top: 30;
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
 }
 .cta1{
   display: block;
   font-family: "Montserrat",sans-serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 4.2rem;
   letter-spacing: 0.25rem;
   padding: 7%;
   text-align: center;
@@ -225,7 +233,7 @@ padding: 4.75rem;
 
     padding-right: 12%;
     padding-left: 12%;
-    width: 100%;
+    width: 90%;
     padding-bottom:6%;
   }
   #mainsponsor{
@@ -239,11 +247,5 @@ padding: 4.75rem;
 }
   .sponsorss-heading{
     font-size: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 832px) {
-  #sponsi-carousel {
-    padding: 200px;
   }
 }
