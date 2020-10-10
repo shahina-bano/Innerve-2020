@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Schedule</title>
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Ubuntu:wght@700&display=swap"
@@ -10,12 +11,19 @@
 
 	<!--css stylesheet for bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 	<!--CSS sheet-->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="../../nav.css">
 	<!-- font awesome icon for button-->
 	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 	<script src="https://kit.fontawesome.com/ce1c9ef40b.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.navbar-toggler-icon {
+			width: 2.5rem;
+		}
+	</style>
 
 </head>
 
@@ -58,7 +66,10 @@
 
 	<section id="schedule" class="s-speakers-schedule">
 		<div class="container">
-			<h2 class="title-conference"><span style="color: #eed9b7"><strong>SCHEDULE</strong></span></h2>
+			<!-- <h2 class="title-conference"><span style="color: #eed9b7"><strong>SCHEDULE</strong></span></h2> -->
+			<div class="jumbotron">
+			  <h1 class="display-4">SCHEDULE</h1>
+			</div>
 			<div class="speakers-timeline-cover">
 
 				<!--**************MECHANICAL STARTS****************-->
@@ -97,7 +108,7 @@
 					<div class="speakers-timeline-info">
 
 						<div class="dropdown">
-							<button class="dropbtn"><strong>Mechanical Events</strong></button>
+							<button class="dropbtn">Mechanical Events</button>
 							<div class="dropdown-content">
 
 
@@ -170,7 +181,7 @@
 
 
 						<div class="dropdown">
-							<button class="dropbtn"><strong>CSE/IT Events</strong></button>
+							<button class="dropbtn">CSE/IT Events</button>
 
 							<div class="dropdown-content">
 
@@ -243,7 +254,7 @@
 					<div class="speakers-timeline-info">
 
 						<div class="dropdown">
-							<button class="dropbtn"><strong>ECE Events</strong></button>
+							<button class="dropbtn">ECE Events</button>
 							<div class="dropdown-content">
 
 
@@ -315,7 +326,7 @@
 					<div class="speakers-timeline-info">
 
 						<div class="dropdown">
-							<button class="dropbtn"><strong>Informal Events</strong></button>
+							<button class="dropbtn">Informal Events</button>
 							<div class="dropdown-content">
 
 
