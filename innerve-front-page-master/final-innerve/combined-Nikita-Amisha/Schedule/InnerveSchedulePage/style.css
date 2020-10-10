@@ -386,6 +386,8 @@ section#schedule.s-speakers.schedule {
   
   .dropdown {
     position: relative;
+    margin-left:7%;
+    margin-right: 7%;
     display: inline-block;
       
   }
